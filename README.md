@@ -4,6 +4,31 @@
   <img src="docs/assets/nuevamente-banner.jpg" alt="NuevaMente - Plataforma EdTech con IA y RAG" width="100%">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Gemini-AI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/RAG-Retrieval%20Augmented%20Generation-4B8BBE?style=for-the-badge" alt="RAG">
+  <img src="https://img.shields.io/badge/ChromaDB-Vector%20Store-FF6F00?style=for-the-badge" alt="ChromaDB">
+  <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/OCI-Oracle%20Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle Cloud Infrastructure">
+  <img src="https://img.shields.io/badge/Pytest-Testing-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Vite-Frontend-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/SQLite-Persistence-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Nginx-Web%20Server-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx">
+</p>
+
+<p align="center">
+  <a href="https://github.com/MaferVelde/NuevaMente-Hackathon-ONE/actions/workflows/ci-qa.yml">
+    <img src="https://github.com/MaferVelde/NuevaMente-Hackathon-ONE/actions/workflows/ci-qa.yml/badge.svg?branch=QA" alt="CI QA">
+  </a>
+</p>
+
 **Sistema Inteligente de Adaptación y Generación de Contenido Educativo**  
 Hackathon ONE · Grupo 10 · LATAM — Programa Oracle Next Education & Alura
 
