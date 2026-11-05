@@ -34,6 +34,23 @@ Hackathon ONE · Grupo 10 · LATAM — Programa Oracle Next Education & Alura
 
 ---
 
+## 🎬 Demo del proyecto
+
+La demo final de **NuevaMente** presenta el proyecto, su arquitectura, funcionamiento y una demostración del producto desarrollado durante el Hackathon ONE.
+
+<p align="center">
+  <a href="https://youtu.be/Nl09wydCVqs?si=Qnfy8liic7e-xowA">
+    <strong>▶️ Ver DemoFinal en YouTube</strong>
+  </a>
+</p>
+
+Como respaldo, el video original también se conserva dentro del repositorio:
+
+➡️ [Ver `DemoFinal.mp4`](DemoFinal.mp4)
+
+> El producto fue desplegado originalmente en infraestructura de **Oracle Cloud Infrastructure (OCI)**. El sitio puede encontrarse fuera de línea una vez finalizado el hackathon, por lo que la demo en video constituye la referencia permanente del funcionamiento del proyecto.
+
+---
 ## ¿Qué es NuevaMente?
 
 NuevaMente es una plataforma que recibe documentación técnica en PDF, Markdown o texto plano y la transforma automáticamente en material educativo adaptado al perfil del destinatario, el contexto temático y el nivel de profundidad requerido.
