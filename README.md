@@ -1,5 +1,9 @@
 # NuevaMente
 
+<p align="center">
+  <img src="docs/assets/nuevamente-banner.jpg" alt="NuevaMente - Plataforma EdTech con IA y RAG" width="100%">
+</p>
+
 **Sistema Inteligente de Adaptación y Generación de Contenido Educativo**  
 Hackathon ONE · Grupo 10 · LATAM — Programa Oracle Next Education & Alura
 
