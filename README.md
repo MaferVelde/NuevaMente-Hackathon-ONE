@@ -27,6 +27,31 @@ El material se adapta al perfil, nicho temático, nivel de detalle y objetivo de
 
 ---
 
+## Mi contribución al proyecto
+
+Este repositorio es una copia personal del proyecto **NuevaMente**, desarrollado de forma colaborativa durante el Hackathon ONE. El historial Git original se conserva para mantener la autoría y trazabilidad de las contribuciones realizadas por todo el equipo.
+
+**Repositorio original del equipo:**  
+https://github.com/No-Country-simulation/G10-LATAM-EQUIPO-7-NUEVAMENTE
+
+Mi participación se concentró principalmente en el área de **Data/IA**, trabajando en el diseño, experimentación, evaluación y documentación de los mecanismos de calidad utilizados por la plataforma.
+
+Entre mis principales contribuciones se encuentran:
+
+- desarrollo y validación del evaluador de calidad para los formatos educativos generados;
+- trabajo sobre los contratos de **Evaluation V1.1 y V2**;
+- creación y análisis de corpus controlados y Ground Truth para evaluación;
+- experimentación y benchmarking del sistema de retrieval;
+- análisis de fallos y calibración de métricas de `content_support`;
+- experimentación con Claim Atomization y validaciones externas;
+- integración y validación del **Semantic Evaluator** basado en Gemini;
+- implementación de **Decision Layer v0.1**, que combina de manera conservadora las señales heurística y semántica para resolver el `verdict` de Evaluation V2;
+- desarrollo y actualización de pruebas automatizadas para Data/IA;
+- documentación técnica y cierre de los artefactos finales del área.
+
+El objetivo de esta copia es conservar el proyecto final y documentar mi participación técnica dentro de un sistema completo que integra RAG, generación de contenido educativo, evaluación automática, Backend, Frontend e infraestructura en OCI.
+
+---
 ## Módulos del sistema
 
 NuevaMente está dividido en servicios desacoplados que se comunican mediante contratos explícitos.
@@ -112,7 +137,7 @@ El documento y cada formato tienen ciclos de estado distintos. La indexación de
 
 ### Evaluación y revisión
 
-Backend solicita a Data/IA la evaluación V2 de los formatos exitosos. La respuesta conserva separados los scores heurísticos y semánticos: no se calcula un score combinado y el veredicto actual se deriva de la señal heurística. Si el proveedor semántico no está configurado, la evaluación semántica queda `unavailable`, pero la evaluación heurística puede continuar.
+Backend solicita a Data/IA la evaluación V2 de los formatos exitosos. La respuesta conserva separados los scores heurísticos y semánticos: no se calcula un score combinado. En Evaluation V2, el `verdict` se resuelve mediante **Decision Layer v0.1**, que utiliza ambas señales de forma conservadora: si los evaluadores coinciden, se conserva el acuerdo; si discrepan, el resultado es `requires_revision`; y si el Semantic Evaluator falla o no está disponible, se mantiene el veredicto heurístico como fallback.
 
 Frontend presenta el veredicto, las métricas y los hallazgos recibidos desde Backend. También permite recorrer las evaluaciones del ciclo actual expuestas en `evaluations`; no consulta directamente el endpoint de historial completo por formato.
 
@@ -165,7 +190,11 @@ cache de modelos
 
 Las credenciales y claves de OCI permanecen fuera de las imágenes Docker y fuera del repositorio.
 
-El workflow de CI para la rama `QA` ejecuta pruebas y lint de Backend, pruebas de Agentes y Data/IA, y build de Frontend. El workflow `Deploy Main to OCI` permite desplegar mediante push a `main` o ejecución manual; conecta por SSH con la VM, actualiza el checkout y reconstruye los servicios con Docker Compose. No publica imágenes versionadas en un registry: consulta los workflows activos de [CI QA](.github/workflows/ci-qa.yml) y [Deploy Main to OCI](.github/workflows/deploy-main.yml).
+El workflow de CI para la rama `QA` ejecuta pruebas y lint de Backend, pruebas de Agentes y Data/IA, y build de Frontend.
+
+En el repositorio original del equipo, el workflow `Deploy Main to OCI` permitía desplegar mediante push a `main` o ejecución manual, conectándose por SSH con la VM y reconstruyendo los servicios con Docker Compose. En esta copia personal, dicho workflow se conserva únicamente como referencia histórica en [`docs/archive/deploy-main-original.yml`](docs/archive/deploy-main-original.yml) y no está activo, para evitar ejecuciones sobre la infraestructura original del equipo.
+
+El workflow de integración continua puede consultarse en [CI QA](.github/workflows/ci-qa.yml).
 
 Más información:
 
